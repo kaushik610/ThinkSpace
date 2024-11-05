@@ -1,0 +1,42 @@
+<mvc:View controllerName="thinkspace.zad.thinkspace.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:cards="sap.f.cards"
+    xmlns="sap.m" xmlns:core="sap.ui.core"
+    xmlns:f="sap.f"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+    <Page id="page" title="{i18n>title}" showHeader="false" enableScrolling="false">
+        <content>
+          <core:HTML id="html" content="
+                &lt;div id='vanta-bg' class='birds'&gt;"/>
+                  <FlexBox width="100%" height="100%" justifyContent="Center" alignItems="Center" class="flex">
+
+                           <f:Card height="300px" width="300px" class="card">
+                        <f:header>
+                            <cards:Header >
+                                <cards:dependents>
+                                    <Title text="Login"></Title>
+                                </cards:dependents>
+                            </cards:Header>
+                        </f:header>
+                        <f:content>
+
+                            <VBox justifyContent="Center" alignItems="Center" width="100%" height="100%">
+                                <html:H1>Login</html:H1>
+                                <VBox >
+                                    <Label text="Login Id"></Label>
+                                    <Input id="inp1"></Input>
+                                </VBox>
+                                <VBox>
+                                    <Label text="Password"></Label>
+                                    <Input id="inp2" ></Input>
+                                </VBox>
+                                <Button text="Login" width="100px" press="login" class="sapUiSmallMargin" type="Emphasized"></Button>
+                            </VBox>
+                        </f:content>
+                    </f:Card>
+                   </FlexBox>
+        </content>
+     
+
+    </Page>
+</mvc:View>

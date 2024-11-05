@@ -1,0 +1,13 @@
+#vanta-bg {
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+  }
+  #veepn-breach-alert{
+    visibility: hidden !important;
+    display: none;
+  }
